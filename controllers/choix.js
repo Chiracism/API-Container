@@ -1,11 +1,11 @@
 const db = require("../models/index");
 const { Op } = require("sequelize");
 
-// Endpoint to create navire
+// Endpoint to create Choix
 exports.createChoix = async (req, res, next) => {
-  const navireObject = JSON.parse(JSON.stringify(req.body));
+  const choixObject = JSON.parse(JSON.stringify(req.body));
 
-  delete choixbject.id;
+  delete choixObject.id;
 
   db.Choix.create({
     ...choixObject,
@@ -16,9 +16,9 @@ exports.createChoix = async (req, res, next) => {
     .catch((error) => res.status(400).json({ error }));
 };
 
-// Endpoint to get single navire
+// Endpoint to get single choix
 exports.getOneChoix = async (req, res, next) => {
-  let choix = await db.choix.findOne({
+  let choix = await db.Choix.findOne({
     where: { id: req.params.id },
   });
 
@@ -29,11 +29,11 @@ exports.getOneChoix = async (req, res, next) => {
   }
 };
 
-// Endpoint to update navire
+// Endpoint to update choix
 exports.modifyChoix = async (req, res, next) => {
   const choixObject = JSON.parse(JSON.stringify(req.query));
 
-  db.choix.update(
+  db.Choix.update(
     { ...choixObject },
     {
       where: { id: req.params.id },
@@ -51,7 +51,7 @@ exports.modifyChoix = async (req, res, next) => {
 
 // Endpoint to get all choix
 exports.getAllChoix = async (req, res, next) => {
-  db.Ch.findAll()
+  db.Choix.findAll()
     .then((choix) => {
       res.status(200).json(choix);
     })

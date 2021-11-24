@@ -3,12 +3,12 @@ const router = express.Router();
 
 import authMiddleware from "../middleware/auth";
 
-const navireCtrl = require("../controllers/navire");
+const choixCtrl = require("../controllers/choix");
 
-router.get("/", authMiddleware, navireCtrl.getAllNavires);
-router.get("/:id", authMiddleware, navireCtrl.getOneNavire);
-router.put("/:id", authMiddleware, navireCtrl.modifyNavire);
-router.post("/", authMiddleware, navireCtrl.createNavire);
-router.delete("/:id", authMiddleware, navireCtrl.deleteNavire);
+router.get("/", authMiddleware, choixCtrl.getAllChoix);
+router.get("/:id", authMiddleware, choixCtrl.getOneChoix);
+router.put("/:id", authMiddleware, choixCtrl.modifyChoix);
+router.post("/", authMiddleware, choixCtrl.createChoix);
+router.delete("/:id", authMiddleware, choixCtrl.deleteChoix);
 
 module.exports = router;

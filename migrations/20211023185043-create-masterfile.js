@@ -11,55 +11,55 @@ module.exports = {
       number: {
         type: Sequelize.STRING
       },
-      pays_id: {
+      paysid: {
         type: Sequelize.STRING
       },
-      type_conteneur_id: {
+      typeconteneurid: {
         type: Sequelize.STRING
       },
-      taille_conteneur_id: {
+      tailleconteneurid: {
         type: Sequelize.STRING
       },
-      materiel_id: {
+      materielid: {
         type: Sequelize.STRING
       },
-      proprietaire_id: {
+      proprietaireid: {
         type: Sequelize.STRING
       },
-      etat_conteneur_id: {
+      etatconteneurid: {
         type: Sequelize.STRING
       },
       constructeur: {
         type: Sequelize.STRING
       },
-      date_fabrication: {
+      datefabrication: {
         type: Sequelize.DATE
       },
-      date_entrer_service: {
+      dateentrerservice: {
         type: Sequelize.DATE
       },
-      date_derniere_inspection: {
+      datederniereinspection: {
         type: Sequelize.DATE
       },
-      valeur_assuree: {
+      valeurassuree: {
         type: Sequelize.FLOAT
       },
-      devise_id: {
+      deviseid: {
         type: Sequelize.STRING
       },
-      societe_inspection: {
+      societeinspection: {
         type: Sequelize.STRING
       },
-      dernier_constat: {
+      dernierconstat: {
         type: Sequelize.STRING
       },
-      site_id: {
+      siteid: {
         type: Sequelize.STRING
       },
-      sous_site_id: {
+      soussiteid: {
         type: Sequelize.STRING
       },
-      date_mouvement: {
+      datemouvement: {
         type: Sequelize.DATE
       },
       observation: {
@@ -68,13 +68,13 @@ module.exports = {
       client: {
         type: Sequelize.STRING
       },
-      date_operation: {
+      dateoperation: {
         type: Sequelize.DATE
       },
       montant: {
         type: Sequelize.FLOAT
       },
-      numero_recu: {
+      numerorecu: {
         type: Sequelize.STRING
       },
       createdAt: {
