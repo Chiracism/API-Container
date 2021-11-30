@@ -5,32 +5,31 @@ const cors = require("cors");
 const app = express();
 
 // Routes
-
-  const userRoutes = require("./routes/user");
-  const roleRoutes = require("./routes/role");
-  const categorieRoutes = require("./routes/categorie");
-  const countrieRoutes = require("./routes/countrie");
-  const clientRoutes = require("./routes/client");
-  const deviseRoutes = require("./routes/devise");
-  const etatconteneurRoutes = require("./routes/etat_conteneur");
-  const materielRoutes = require("./routes/materiel");
-  const navireRoutes = require("./routes/navire");
-  const ownerRoutes = require("./routes/owner");
-  const portRoutes = require("./routes/port");
-  const rateRoutes = require("./routes/rate");
-  const siteRoutes = require("./routes/site");
-  const sizeRoutes = require("./routes/size");
-  const soussiteRoutes = require("./routes/soussite");
-  const typeRoutes = require("./routes/type");
-  const masterfileRoutes = require("./routes/masterfile");
-  const statRoutes = require("./routes/stats");
-  const mouvementRoutes = require("./routes/mouvement");
-  const reparationRoutes = require('./routes/reparation');
-  const surestarieRoutes = require('./routes/surestarie');
-  const choixRoutes = require('./routes/choix');
+const userRoutes = require("./routes/user");
+const roleRoutes = require("./routes/role");
+const categorieRoutes = require("./routes/categorie");
+const countrieRoutes = require("./routes/countrie");
+const clientRoutes = require("./routes/client");
+const deviseRoutes = require("./routes/devise");
+const etatconteneurRoutes = require("./routes/etat_conteneur");
+const materielRoutes = require("./routes/materiel");
+const navireRoutes = require("./routes/navire");
+const ownerRoutes = require("./routes/owner");
+const portRoutes = require("./routes/port");
+const rateRoutes = require("./routes/rate");
+const siteRoutes = require("./routes/site");
+const sizeRoutes = require("./routes/size");
+const soussiteRoutes = require("./routes/soussite");
+const typeRoutes = require("./routes/type");
+const masterfileRoutes = require("./routes/masterfile");
+const statRoutes = require("./routes/stats");
+const mouvementRoutes = require("./routes/mouvement");
+const reparationRoutes = require('./routes/reparation');
+const surestarieRoutes = require('./routes/surestarie');
+const choixRoutes = require('./routes/choix');
 
 app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin: *", "*");
+  res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content, Accept, Content-Type, Authorization"
