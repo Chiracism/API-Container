@@ -28,8 +28,6 @@ const app = express();
   const surestarieRoutes = require('./routes/surestarie');
   const choixRoutes = require('./routes/choix');
 
-
-
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader(
